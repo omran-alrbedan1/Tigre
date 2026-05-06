@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
-import enMessages from "@/messages/en/contact.json";
-import arMessages from "@/messages/ar/contact.json";
+import { getTranslations } from "next-intl/server";
 
 export async function getContactMetadata(locale: string): Promise<Metadata> {
-  const t = locale === "ar" ? arMessages : enMessages;
+  const t = await getTranslations({ locale, namespace: 'contact.metadata' });
 
   return buildMetadata({
-    title: t.metadata.title,
-    description: t.metadata.description,
+    title: t('title'),
+    description: t('description'),
     path: "/contact",
     locale: locale as "en" | "ar",
-    keywords: t.metadata.keywords,
+    keywords: t.raw('keywords') as string[],
     image: "/og-default.png",
   });
 }

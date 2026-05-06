@@ -29,9 +29,10 @@ export function buildMetadata({
   const ogImage = image ?? `${BASE_URL}/og-default.png`;
 
   return {
+    metadataBase: new URL(BASE_URL),
     title,
     description,
-    keywords,
+    keywords: Array.isArray(keywords) ? keywords.join(', ') : keywords,
     alternates: {
       canonical: url,
       languages: {
@@ -58,10 +59,18 @@ export function buildMetadata({
       siteName: defaultMetadata.siteName,
       locale: locale === "ar" ? "ar_JO" : "en_US",
       type: "website",
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title,
+          type: 'image/jpeg',
+        },
+      ],
     },
     twitter: {
-      card: "summary_large_image",
+      card: 'summary_large_image',
       title,
       description,
       images: [ogImage],
