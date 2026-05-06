@@ -26,7 +26,7 @@ export function buildMetadata({
   noIndex?: boolean;
 }): Metadata {
   const url = `${BASE_URL}/${locale}${path}`;
-  const ogImage = image ?? `${BASE_URL}/og-default.png`;
+  const ogImage = image ?? `${BASE_URL}/open_graph.png`;
 
   return {
     metadataBase: new URL(BASE_URL),

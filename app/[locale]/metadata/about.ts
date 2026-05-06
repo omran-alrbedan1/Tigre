@@ -11,6 +11,6 @@ export async function getAboutMetadata(locale: string): Promise<Metadata> {
     path: "/about",
     locale: locale as "en" | "ar",
     keywords: t.raw('keywords') as string[],
-    image: "/og-default.png",
+    image: "/open_graph.png",
   });
 }
