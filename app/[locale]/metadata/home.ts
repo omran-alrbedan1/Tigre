@@ -11,6 +11,5 @@ export async function getHomeMetadata(locale: string): Promise<Metadata> {
     path: "",
     locale: locale as "en" | "ar",
     keywords: t.raw('keywords') as string[],
-    image: "/open_graph.png",
   });
 }

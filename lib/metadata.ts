@@ -13,7 +13,6 @@ export function buildMetadata({
   description,
   path = "",
   locale = "en",
-  image,
   keywords,
   noIndex = false,
 }: {
@@ -21,12 +20,10 @@ export function buildMetadata({
   description: string;
   path?: string;
   locale?: "en" | "ar";
-  image?: string;
   keywords?: string[];
   noIndex?: boolean;
 }): Metadata {
   const url = `${BASE_URL}/${locale}${path}`;
-  const ogImage = image ? `${BASE_URL}${image}` : `${BASE_URL}/open_graph.png`;
 
   return {
     metadataBase: new URL(BASE_URL),
@@ -43,15 +40,15 @@ export function buildMetadata({
     robots: noIndex
       ? { index: false, follow: false }
       : {
+        index: true,
+        follow: true,
+        googleBot: {
           index: true,
           follow: true,
-          googleBot: {
-            index: true,
-            follow: true,
-            "max-image-preview": "large",
-            "max-snippet": -1,
-          },
+          "max-image-preview": "large",
+          "max-snippet": -1,
         },
+      },
     openGraph: {
       title,
       description,
@@ -61,12 +58,11 @@ export function buildMetadata({
       type: "website",
       images: [
         {
-          url: ogImage,
+          url: '/images/open_graph.jpeg',
           width: 1200,
           height: 630,
-          alt: title,
-          type: 'image/png',
-          secureUrl: ogImage,
+          alt: 'openGraph.imageAlt',
+          type: 'image/jpeg',
         },
       ],
     },
@@ -74,7 +70,7 @@ export function buildMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [ogImage],
+      images: ['/images/open_graph.jpeg'],
     },
   };
 }
