@@ -1,7 +1,5 @@
 import { images } from '@/constants/images'
 import Image from 'next/image'
-import React from 'react'
-import AnimatedSection from '@/components/shared/AnimatedSection'
 import CustomButton from '@/components/shared/CustomButton'
 import { useTranslations } from 'next-intl'
 import { useLocale } from 'next-intl'
