@@ -21,13 +21,13 @@ export async function getHomeMetadata(locale: string): Promise<Metadata> {
       description: t.metadata.description,
       url: `https://tigre.com/${locale}`,
       type: "website",
-      images: [{ url: "/og-default.jpeg", width: 1200, height: 630 }],
+      images: [{ url: "/og-default.png", width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
       title: t.metadata.title,
       description: t.metadata.description,
-      images: ["/og-default.jpeg"],
+      images: ["/og-default.png"],
     },
   };
 }
