@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "title": "Tigre — Fast Food Delivery in Under 30 Minutes | Order Online",
+    "description": "Order delicious food from the best restaurants in your city with Tigre. Fast delivery under 30 minutes, real-time tracking, and amazing taste.",
+    "keywords": ["food delivery", "fast delivery", "order food online", "restaurant delivery", "30 minute delivery", "Tigre app"]
+  },
+  "hero": {
+    "super": "Super",
+    "delicious": "Delicious",
+    "food": "Food",
+    "description": "From the best restaurants straight to your door – in under 30 minutes, every single time.",
+    "boldFlavors": "Bold Flavors.",
+    "lightningDelivery": "Lightning<br />delivery.",
+    "downloadApp": "Download App Now"
+  },
+  "getApp": {
+    "title": "Get the App",
+    "heading": "Order in",
+    "headingHighlight": "Seconds",
+    "description": "The Tigre app makes ordering as effortless as hunger itself. Discover, tap, eat. Your city's best food is one swipe away."
+  },
+  "growWithTigre": {
+    "heading": "Grow With Tigre",
+    "description": "Join the fastest-growing delivery network in the city. Reach thousands of hungry customers, grow your revenue, and manage everything from one powerful dashboard.",
+    "benefits": {
+      "moreRevenue": {
+        "title": "More Revenue",
+        "desc": "Average partners see +40% revenue in their first 3 months."
+      },
+      "newCustomers": {
+        "title": "New Customers",
+        "desc": "Tap into 50,000+ active Tigre users hungry for new spots."
+      },
+      "smartDashboard": {
+        "title": "Smart Dashboard",
+        "desc": "Orders, analytics, menu management, reviews — all in one clean interface. No tech skills needed."
+      },
+      "fastOnboarding": {
+        "title": "Fast Onboarding",
+        "desc": "Go live in less than 24 hours. Our team handles everything."
+      },
+      "featuredSpots": {
+        "title": "Featured Spots",
+        "desc": "Top partners get promoted in the app to thousands of users."
+      }
+    }
+  },
+  "marquee": {
+    "realTimeTracking": "Real Time Tracking",
+    "tasteThePower": "Taste The Power of Tigre",
+    "freeDelivery": "Free Delivery on First Order",
+    "orderInSeconds": "Order in Seconds",
+    "minuteGuarantee": "30 Minute Guarantee"
+  },
+  "whoWeAre": {
+    "tag": "Who We Are",
+    "title": "Hunger Solved Instantly",
+    "description": "Tigre is the boldest food delivery platform in the city — built for people who refuse to wait. We connect you with the best restaurants, the fastest riders, and an experience that's completely seamless.",
+    "features": {
+      "fastDelivery": {
+        "title": "Lightning Fast Delivery",
+        "desc": "Average delivery time under 30 minutes. We move fast so your food stays hot."
+      },
+      "restaurantVariety": {
+        "title": "Massive Restaurant Variety",
+        "desc": "From street food to fine dining — over 500 restaurants at your fingertips."
+      },
+      "easyToUse": {
+        "title": "Ridiculously Easy to Use",
+        "desc": "Order in under 60 seconds. Track your rider live. No friction, just food."
+      }
+    }
+  },
+  "stats": {
+    "restaurants": "RESTAURANTS",
+    "dailyOrders": "DAILY ORDERS", 
+    "avgDelivery": "AVG DELIVERY",
+    "appRating": "APP RATING"
+  },
+  "footer": {
+    "brandDescription": "The fastest food delivery platform in the city. Built for speed, taste, and relentless pursuit of a great meal.",
+    "navigation": "Navigation",
+    "connectOnSocialMedia": "Connect On Social Media",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "copyright": "© {year} Tigre. All rights reserved.",
+    "builtForSpeed": "Built for speed. Built for taste.",
+    "email": "Email",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "poweredBy": "Crafted by"
+  },
+  "aboutHero": {
+    "ourStory": "Our Story",
+    "weAreTigre": "We are Tigre",
+    "bornHungry": "Born hungry",
+    "movementDescription": "We didn't just build another delivery app: we built a movement for people who demand exceptional food, delivered with all power and speed."
+  }
+}

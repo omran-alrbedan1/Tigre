@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "About Tigre — Our Story, Mission & Fast Food Delivery Vision",
+    "description": "Learn about Tigre's mission to deliver exceptional food in under 30 minutes. Discover our story, values, and commitment to speed and taste.",
+    "keywords": ["about Tigre", "food delivery mission", "Tigre story", "fast delivery vision", "30 minute guarantee"]
+  },
+  "title": "About Us",
+  "description": "Learn more about Tigre and our mission to deliver the best food in your city.",
+  "hero": {
+    "ourStory": "Our Story",
+    "weAreTigre": "We Are",
+    "tigre": "Tigre.",
+    "bornHungry": "Born Hungry.",
+    "movementDescription": "We didn't build just another delivery app. We built a movement — for people who demand great food, delivered with power and speed.",
+    "boldFlavors": "Bold Flavors.",
+    "lightningDelivery": "Lightning\ndelivery.",
+    "tigreBurgerStack": "Tigre Burger stack",
+    "badge": "badge"
+  },
+  "origin": {
+    "title": "The Origin",
+    "mainTitle": "From One Idea to a Movement",
+    "quote": "We were tired of waiting an hour for cold food. So we built something better.",
+    "paragraph1": "Tigre was born in 2021 out of pure frustration. Our founders — passionate food lovers and tech builders — saw a broken system: slow delivery, mediocre choices, and an experience that felt anything but premium.",
+    "paragraph2": "So they started over. They built a platform from the ground up, obsessing over every detail — from the speed of the app to the temperature of the food when it arrives. Tigre isn't just delivery. It's a promise.",
+    "paragraph3": "Today, we partner with over 500 restaurants, serve tens of thousands of orders daily, and we're only getting started.",
+    "mascotAlt": "Tigre Mascot"
+  },
+    "values": {
+      "title": "What We Stand For",
+      "mainTitle": "Values That Drive Everything",
+      "description": "Every decision we make — from the restaurants we partner with to the riders we hire — is guided by a simple belief: great food deserves a great experience. These are the values that make Tigre, Tigre.",
+      "speedTitle": "Speed Without Compromise",
+      "speedDescription": "Fast doesn't mean careless. We've engineered our entire logistics system around one promise: hot food, fast.",
+      "passionTitle": "Passion for Food",
+      "passionDescription": "We only partner with restaurants that genuinely care about what they cook. Quality is non-negotiable.",
+      "trustTitle": "Built on Trust",
+      "trustDescription": "Transparent fees, honest reviews, and real support. We build relationships — with customers and partners alike.",
+      "diversityTitle": "Diversity of Flavor",
+      "diversityDescription": "From street falafel to artisan pizza — we celebrate every cuisine, every culture, every craving.",
+      "techTitle": "Tech-First Thinking",
+      "techDescription": "An app so smooth it feels invisible. Real-time tracking, instant checkout, zero friction. Technology you feel.",
+      "communityTitle": "Community First",
+      "communityDescription": "Tigre is more than an app — it's a community of food lovers, local chefs, and bold riders who love what they do."
+    },
+    "promise": {
+      "title": "Our Promise to You",
+      "mainTitle": "Hungry People Deserve Better.",
+      "description": "We started Tigre because the world needed a delivery platform that actually cared — about food, speed, experience, and people. That mission hasn't changed. It never will.",
+      "downloadApp": "Download The App",
+      "joinPartner": "Join Us as Partner"
+    }
+  }

@@ -1,0 +1,28 @@
+{
+  "loading": "جاري التحميل...",
+  "error": "خطأ",
+  "success": "نجح",
+  "close": "إغلاق",
+  "cancel": "إلغاء",
+  "submit": "إرسال",
+  "downloadApp": "حمل التطبيق",
+  "downloadAppNow": "حمل التطبيق الآن",
+  "getItOn": "احصل عليه من",
+  "googlePlay": "جوجل بلاي",
+  "downloadOnThe": "حمل من",
+  "appStore": "آب ستور",
+  "joinUsAsPartner": "انضم إلينا كشريك",
+  "forRestaurants": "للمطاعم",
+  "zeroSetupFees": "بدون رسوم إعداد",
+  "dashboardAnalytics": "تحليلات لوحة التحكم",
+  "dedicatedSupport": "دعم مخصص",
+  "downloadModal": {
+    "title": "حمل التطبيق",
+    "description": "حمل التطبيق وابدأ في طلب الطعام اللذيذ",
+    "downloadOn": "حمل من",
+    "appStore": "آب ستور",
+    "getItOn": "احصل عليه من",
+    "googlePlay": "جوجل بلاي",
+    "footerText": "متاح لأجهزة iOS و Android"
+  }
+}

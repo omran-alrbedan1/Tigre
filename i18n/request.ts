@@ -1,0 +1,36 @@
+import {getRequestConfig} from 'next-intl/server';
+import {routing} from './routing';
+
+export default getRequestConfig(async ({requestLocale}: {requestLocale: Promise<string | undefined>}) => {
+  let locale = await requestLocale;
+  
+  if (!locale || !routing.locales.includes(locale as any)) {
+    locale = routing.defaultLocale;
+  }
+  
+  const [
+    common,
+    navigation, 
+    home,
+    about,
+    contact,
+  ] = await Promise.all([
+    import(`../messages/${locale}/common.json`),
+    import(`../messages/${locale}/navigation.json`),
+    import(`../messages/${locale}/home.json`),
+    import(`../messages/${locale}/about.json`),
+    import(`../messages/${locale}/contact.json`),
+  ]);
+
+  return {
+    locale,
+    messages: {
+      common: common.default,
+      navigation: navigation.default,
+      home: home.default,
+      about: about.default,
+      contact: contact.default,
+    },
+    timeZone: 'Asia/Amman'
+  };
+});

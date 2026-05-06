@@ -1,0 +1,28 @@
+{
+  "loading": "Loading...",
+  "error": "Error",
+  "success": "Success",
+  "close": "Close",
+  "cancel": "Cancel",
+  "submit": "Submit",
+  "downloadApp": "Download App",
+  "downloadAppNow": "Download App Now",
+  "getItOn": "GET IT ON",
+  "googlePlay": "Google Play",
+  "downloadOnThe": "DOWNLOAD ON THE",
+  "appStore": "App Store",
+  "joinUsAsPartner": "Join Us as Partner",
+  "forRestaurants": "For Restaurants",
+  "zeroSetupFees": "Zero setup fees",
+  "dashboardAnalytics": "Dashboard analytics",
+  "dedicatedSupport": "Dedicated support",
+  "downloadModal": {
+    "title": "Download App",
+    "description": "Download app and start ordering delicious food",
+    "downloadOn": "Download on",
+    "appStore": "App Store",
+    "getItOn": "Get it on",
+    "googlePlay": "Google Play",
+    "footerText": "Available for iOS and Android devices"
+  }
+}

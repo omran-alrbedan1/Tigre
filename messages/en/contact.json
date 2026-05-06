@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "title": "Contact Tigre — Customer Support & Partnership Inquiries",
+    "description": "Get in touch with Tigre for customer support, restaurant partnerships, or general inquiries. We're here to help with fast food delivery questions.",
+    "keywords": ["contact Tigre", "Tigre support", "food delivery help", "restaurant partnership", "Tigre customer service"]
+  },
+  "title": "Contact Us",
+  "description": "Get in touch with the Tigre team for support, partnerships, or feedback.",
+  "subtitle": "Let's Talk",
+  "subdescription": "Have a question, partnership inquiry, or just want to say hello? We'd love to hear from you.",
+  "getInTouch": "Get in Touch",
+  "form": {
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "message": "Your Message",
+    "send": "Send Message",
+    "placeholders": {
+      "name": "Enter name here...",
+      "phone": "+95443324548",
+      "email": "doaaqatzeh@gmail.com",
+      "message": "Enter Your Message..."
+    }
+  }
+}
