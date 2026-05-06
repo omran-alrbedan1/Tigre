@@ -37,7 +37,7 @@ export default function HeroSection() {
                     />
                 </div>
 
-                <div className="container mx-auto px-4 sm:px-6 relative z-10 h-full pt-20 pb-8
+                <div className="container mx-auto px-6 relative z-10 h-full pt-20 pb-8
                                 grid grid-cols-1 lg:grid-cols-2 items-center">
 
                     {/* ── Text Content ── */}
@@ -78,14 +78,14 @@ export default function HeroSection() {
                         <AnimatedSection delay={0.6}>
                             <p className="text-white/90 ltr:ml-4 rtl:mr-4 ltr:sm:ml-12 rtl:sm:mr-12
                                            text-base lg:text-lg max-w-xs sm:max-w-md
-                                           lg:max-w-sm lg:mt-6 leading-snug font-medium px-2">
+                                           lg:mt-4 leading-snug font-medium mt-4">
                                 {t('hero.description')}
                             </p>
                         </AnimatedSection>
 
                         {/* CTA Button */}
                         <AnimatedSection delay={0.8}>
-                            <div className="relative mt-8 lg:mt-12 ltr:ml-4 rtl:mr-4 ltr:sm:ml-10 rtl:sm:mr-10 px-2">
+                            <div className="relative mt-8 lg:mt-12 ltr:ml-4 rtl:mr-4 ltr:sm:ml-10 rtl:sm:mr-10">
                                 <div onClick={() => setDownloadModalOpen(true)}>
                                     <AnimatedCard hoverScale={1.1} hoverColor="#F5C518">
                                         <CustomButton variant="primary" size="md" hoverScale={1.05}>
@@ -105,8 +105,6 @@ export default function HeroSection() {
                         </AnimatedSection>
                     </div>
 
-                    {/* ── Burger + Badge ── */}
-                    {/* On mobile: burger centered below text. On lg: right column */}
                     <div className="relative flex items-center justify-center lg:justify-end
                                     mt-8 lg:mt-0 h-64 sm:h-80 lg:h-full">
 
@@ -129,15 +127,13 @@ export default function HeroSection() {
                             </FloatingElement>
                         </AnimatedSection>
 
-                        {/* Badge — visible on all screens with proper positioning */}
-                        <AnimatedSection animation="scale" delay={0.5}>
-                            <FloatingElement duration={4} amplitude={10} delay={0.8}>
-                                <div className={`absolute
-                                                ltr:-right-4 rtl:-left-4 -top-4
+                        {/* Badge — repositioned for mobile */}
+                                <div className="absolute hidden md:block
+                                                ltr:-right-4 rtl:-left-4 top-32
                                                 ltr:sm:-right-8 rtl:sm:-left-8 sm:-top-8
                                                 ltr:lg:-right-32 rtl:lg:-left-32 lg:-top-60
                                                 w-28 h-28 sm:w-40 sm:h-40 lg:w-64 lg:h-64
-                                                z-30`}>
+                                                z-30 mt-32">
                                     <Image src={images.hero1} alt="Lightning delivery" fill className="object-contain" />
                                     <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center
                                                     p-2 sm:p-4 lg:p-6 mt-[-10px] lg:mt-[-20px]">
@@ -147,8 +143,6 @@ export default function HeroSection() {
                                             dangerouslySetInnerHTML={{ __html: t('hero.lightningDelivery') }}></p>
                                     </div>
                                 </div>
-                            </FloatingElement>
-                        </AnimatedSection>
                     </div>
 
                 </div>
