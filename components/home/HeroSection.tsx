@@ -41,7 +41,7 @@ export default function HeroSection() {
                                 grid grid-cols-1 lg:grid-cols-2 items-center">
 
                     {/* ── Text Content ── */}
-                    <div className="relative flex flex-col items-start mt-8 lg:-mt-26">
+                    <div className="relative flex flex-col items-start mt-8 md:ltr:ml-24 lg:-mt-26">
 
                         {/* Title */}
                         <AnimatedSection className="text-white mb-2" delay={0.2}>
@@ -128,21 +128,21 @@ export default function HeroSection() {
                         </AnimatedSection>
 
                         {/* Badge — repositioned for mobile */}
-                                <div className="absolute hidden md:block
+                        <div className="absolute hidden md:block
                                                 ltr:-right-4 rtl:-left-4 top-32
                                                 ltr:sm:-right-8 rtl:sm:-left-8 sm:-top-8
                                                 ltr:lg:-right-32 rtl:lg:-left-32 lg:-top-60
                                                 w-28 h-28 sm:w-40 sm:h-40 lg:w-64 lg:h-64
                                                 z-30 mt-32">
-                                    <Image src={images.hero1} alt="Lightning delivery" fill className="object-contain" />
-                                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center
+                            <Image src={images.hero1} alt="Lightning delivery" fill className="object-contain" />
+                            <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center
                                                     p-2 sm:p-4 lg:p-6 mt-[-10px] lg:mt-[-20px]">
-                                        <p className="text-[8px] sm:text-[10px] lg:text-xs font-bold text-yellow-400 uppercase tracking-widest"
-                                            dangerouslySetInnerHTML={{ __html: t('hero.boldFlavors') }}></p>
-                                        <p className="text-[10px] sm:text-xs lg:text-sm font-bold leading-tight"
-                                            dangerouslySetInnerHTML={{ __html: t('hero.lightningDelivery') }}></p>
-                                    </div>
-                                </div>
+                                <p className="text-[8px] sm:text-[10px] lg:text-xs font-bold text-yellow-400 uppercase tracking-widest"
+                                    dangerouslySetInnerHTML={{ __html: t('hero.boldFlavors') }}></p>
+                                <p className="text-[10px] sm:text-xs lg:text-sm font-bold leading-tight"
+                                    dangerouslySetInnerHTML={{ __html: t('hero.lightningDelivery') }}></p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
