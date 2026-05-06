@@ -20,8 +20,6 @@ export default function Header() {
   const [isPending, startTransition] = useTransition();
   const t = useTranslations('navigation');
   const tCommon = useTranslations('common');
-
-  // Remove locale from pathname for comparison
   const getCleanPathname = () => {
     // Remove the locale prefix (e.g., /en, /ar) for comparison
     const parts = pathname.split('/');
@@ -158,7 +156,7 @@ export default function Header() {
             {/* Language Switcher in Mobile Menu */}
             <div className="flex justify-center pt-4 border-t border-white/10 mt-2">
               <div className="flex items-center gap-2">
-                <span className="text-white text-sm font-medium">اللغة :</span>
+                <span className="text-white text-sm font-medium">{tCommon('language')}</span>
                 <button
                   onClick={() => handleLanguageChange('ar')}
                   disabled={isPending}

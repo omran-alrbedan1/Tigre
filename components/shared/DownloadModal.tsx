@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import Image from "next/image";
-import { X } from "lucide-react";
 import { images } from "@/constants/images";
 import {
   Dialog,
@@ -25,7 +24,9 @@ export default function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
   const t = useTranslations('common');
 
   return (
-    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
+    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()} 
+      
+    >
       <DialogContent className="bg-black/20 backdrop-blur-xl border-white/20 max-w-md mx-4">
         <DialogHeader>
           <DialogTitle className="sr-only">
