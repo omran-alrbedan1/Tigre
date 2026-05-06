@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const BASE_URL = "https://tigre.com";
+const BASE_URL = "https://tigre-blush.vercel.app";
 
 export const defaultMetadata = {
   siteName: "Tigre",
@@ -26,7 +26,7 @@ export function buildMetadata({
   noIndex?: boolean;
 }): Metadata {
   const url = `${BASE_URL}/${locale}${path}`;
-  const ogImage = image ?? `${BASE_URL}/open_graph.png`;
+  const ogImage = image ? `${BASE_URL}${image}` : `${BASE_URL}/open_graph.png`;
 
   return {
     metadataBase: new URL(BASE_URL),
@@ -66,6 +66,7 @@ export function buildMetadata({
           height: 630,
           alt: title,
           type: 'image/png',
+          secureUrl: ogImage,
         },
       ],
     },

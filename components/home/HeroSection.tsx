@@ -38,7 +38,7 @@ export default function HeroSection() {
                 </div>
 
                 <div className="container mx-auto px-6 relative z-10 h-full pt-20 pb-8
-                                grid grid-cols-1 lg:grid-cols-2 items-center">
+                                grid grid-cols-1 lg:grid-cols-2 items-cente px-24">
 
                     {/* ── Text Content ── */}
                     <div className="relative flex flex-col items-start mt-8 md:ltr:ml-24 lg:-mt-26">
