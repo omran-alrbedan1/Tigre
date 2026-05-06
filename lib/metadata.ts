@@ -58,10 +58,10 @@ export function buildMetadata({
       type: "website",
       images: [
         {
-          url: '/images/open_graph.jpeg',
+          url: `${BASE_URL}/images/open_graph.jpeg`,
           width: 1200,
           height: 630,
-          alt: 'openGraph.imageAlt',
+          alt: 'Tigre Fast Food Delivery',
           type: 'image/jpeg',
         },
       ],
@@ -70,7 +70,7 @@ export function buildMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: ['/images/open_graph.jpeg'],
+      images: [`${BASE_URL}/images/open_graph.jpeg`],
     },
   };
 }
