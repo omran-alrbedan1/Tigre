@@ -1,15 +1,28 @@
 import type { Metadata } from "next";
-import { buildMetadata } from "@/lib/metadata";
-import { getTranslations } from "next-intl/server";
+import enMessages from "@/messages/en/home.json";
+import arMessages from "@/messages/ar/home.json";
 
 export async function getHomeMetadata(locale: string): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: 'home.metadata' });
+  const t = locale === "ar" ? arMessages : enMessages;
+  const path = `https://abusarajewelry.com/${locale}/home`;
 
-  return buildMetadata({
-    title: t('title'),
-    description: t('description'),
-    path: "",
-    locale: locale as "en" | "ar",
-    keywords: t.raw('keywords') as string[],
-  });
+  return {
+    title: t.metadata.title,
+    description: t.metadata.description,
+    keywords: t.metadata.keywords,
+    alternates: {
+      canonical: path,
+      languages: {
+        "en-US": "https://abusarajewelry.com/en/home",
+        "ar-JO": "https://abusarajewelry.com/ar/home",
+      },
+    },
+    openGraph: {
+      title: t.metadata.title,
+      description: t.metadata.description,
+      url: path,
+      type: "website",
+      images: [{ url: "/og-default.jpg", width: 1200, height: 630 }],
+    },
+  };
 }
