@@ -29,11 +29,11 @@ const dmSans = DM_Sans({
 export async function generateMetadata({
   params
 }: {
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
   const baseUrl = 'https://tigre-blush.vercel.app';
-  
+
   return {
     metadataBase: new URL(baseUrl),
     title: {
@@ -42,7 +42,7 @@ export async function generateMetadata({
     },
     description: "Order delicious food from the best restaurants in your city with Tigre. Fast food delivery in under 30 minutes. Download our app for quick and easy ordering.",
     keywords: [
-      "Tigre", "food delivery", "fast food", "restaurant delivery", 
+      "Tigre", "food delivery", "fast food", "restaurant delivery",
       "quick delivery", "online food ordering", "food app", "delivery service",
       "30 minute delivery", "restaurant", "takeaway", "food delivery app"
     ],
@@ -70,11 +70,11 @@ export async function generateMetadata({
       title: "Tigre - Fast Food Delivery in Under 30 Minutes | Order Online",
       description: "Order delicious food from the best restaurants in your city with Tigre. Fast food delivery in under 30 minutes.",
       images: [{
-        url: "/images/open_graph.jpeg",
+        url: "/hero_background.png",
         width: 1200,
         height: 630,
         alt: "Tigre - Fast Food Delivery",
-        type: "image/jpeg",
+        type: "image/png",
       }],
     },
     twitter: {
@@ -82,10 +82,11 @@ export async function generateMetadata({
       title: "Tigre - Fast Food Delivery in Under 30 Minutes | Order Online",
       description: "Order delicious food from the best restaurants in your city with Tigre. Fast food delivery in under 30 minutes.",
       images: [{
-        url: "/images/open_graph.jpeg",
+        url: "/hero_background.png",
         width: 1200,
         height: 630,
         alt: "Tigre - Fast Food Delivery",
+        type: "image/png",
       }],
       site: "@tigre",
     },
@@ -110,7 +111,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
@@ -118,10 +119,10 @@ export default async function LocaleLayout({
   params
 }: {
   children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }) {
-  const {locale} = await params;
-  
+  const { locale } = await params;
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
@@ -132,9 +133,9 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${bebas.variable} ${playfair.variable} ${dmSans.variable}`} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
-          <Header/>
+          <Header />
           {children}
-          <Footer/>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
