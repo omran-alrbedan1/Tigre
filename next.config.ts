@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   output: 'standalone', 
 
   images: {
+    domains: ['tigre-blush.vercel.app'],
     formats: ["image/webp", "image/avif"],
     deviceSizes: [640, 828, 1200, 1920],
     minimumCacheTTL: 60,
