@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const BASE_URL = "https://tigre.com";
+  const BASE_URL = "https://tigre-blush.vercel.app";
 
   const staticPages = [
     "/",

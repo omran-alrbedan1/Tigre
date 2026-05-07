@@ -3,9 +3,9 @@ export function FoodDeliveryServiceSchema() {
     "@context": "https://schema.org",
     "@type": "FoodDeliveryService",
     name: "Tigre",
-    url: "https://tigre.com",
-    logo: "https://tigre.com/logo.png",
-    image: "https://tigre.com/logo.png",
+    url: "https://tigre-blush.vercel.app",
+    logo: "https://tigre-blush.vercel.app/logo.png",
+    image: "https://tigre-blush.vercel.app/logo.png",
     description: "Fast food delivery service delivering from the best restaurants in under 30 minutes.",
     telephone: "+962 6 533 3333",
     address: {
@@ -46,8 +46,8 @@ export function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Tigre",
-    url: "https://tigre.com",
-    logo: "https://tigre.com/logo.png",
+    url: "https://tigre-blush.vercel.app",
+    logo: "https://tigre-blush.vercel.app/logo.png",
     description: "Fast food delivery platform delivering exceptional taste in under 30 minutes.",
     contactPoint: {
       "@type": "ContactPoint",
@@ -76,7 +76,7 @@ export function RestaurantPartnershipSchema() {
     "@type": "Service",
     name: "Restaurant Partnership Program",
     description: "Partner with Tigre to grow your restaurant business and reach thousands of hungry customers.",
-    url: "https://tigre.com/en/grow-with-tigre",
+    url: "https://tigre-blush.vercel.app/en/grow-with-tigre",
     provider: {
       "@type": "Organization",
       name: "Tigre",

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://tigre.com/sitemap.xml",
+    sitemap: "https://tigre-blush.vercel.app/sitemap.xml",
   };
 }

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     "30 minute delivery", "restaurant", "takeaway", "food delivery app"
   ],
   authors: [{ name: "Tigre Team", url: "https://tigre-blush.vercel.app/" }],
-  creator: "Tigre",
+  creator: "Future X",
   publisher: "Tigre",
   category: "Food & Delivery",
   robots: {
