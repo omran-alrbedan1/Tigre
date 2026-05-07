@@ -63,7 +63,7 @@ export function buildMetadata({
       description: description,
       images: [
         {
-          url: "/images/og-default.jpg",
+          url: "https://tigre-blush.vercel.app/images/open_graph.jpeg",
           width: 1200,
           height: 630,
           alt: "Tigre - Fast Food Delivery",
@@ -75,7 +75,7 @@ export function buildMetadata({
       card: "summary_large_image",
       title: title,
       description: description,
-      images: ["/images/og-default.jpg"],
+      images: ["https://tigre-blush.vercel.app/images/open_graph.jpeg"],
       site: "@tigre",
     },
     alternates: {
