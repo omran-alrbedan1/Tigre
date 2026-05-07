@@ -1,4 +1,3 @@
-
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -70,24 +69,17 @@ export async function generateMetadata({
       title: "Tigre - Fast Food Delivery in Under 30 Minutes | Order Online",
       description: "Order delicious food from the best restaurants in your city with Tigre. Fast food delivery in under 30 minutes.",
       images: [{
-        url: "/hero_background.png",
+        url: `${baseUrl}/images/origin.png`,
         width: 1200,
         height: 630,
         alt: "Tigre - Fast Food Delivery",
-        type: "image/png",
       }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Tigre - Fast Food Delivery in Under 30 Minutes | Order Online",
       description: "Order delicious food from the best restaurants in your city with Tigre. Fast food delivery in under 30 minutes.",
-      images: [{
-        url: "/hero_background.png",
-        width: 1200,
-        height: 630,
-        alt: "Tigre - Fast Food Delivery",
-        type: "image/png",
-      }],
+      images: [`${baseUrl}/images/origin.png`],
       site: "@tigre",
     },
     alternates: {
