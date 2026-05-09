@@ -7,6 +7,13 @@ import Footer from "@/components/shared/Footer";
 import { Bebas_Neue, Playfair_Display, DM_Sans } from "next/font/google";
 import "../globals.css";
 import type { Metadata } from "next";
+import { 
+  FoodDeliveryServiceSchema, 
+  OrganizationSchema, 
+  WebsiteSchema, 
+  MobileAppSchema, 
+  FAQSchema 
+} from "@/components/seo/JsonLd";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -124,6 +131,13 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${bebas.variable} ${playfair.variable} ${dmSans.variable}`} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+      <head>
+        <FoodDeliveryServiceSchema />
+        <OrganizationSchema />
+        <WebsiteSchema />
+        <MobileAppSchema />
+        <FAQSchema />
+      </head>
       <body className="antialiased">
         <NextIntlClientProvider messages={messages}>
           <Header />
